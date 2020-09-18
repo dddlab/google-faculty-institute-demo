@@ -2,6 +2,7 @@
 
 * Create Compute Engine VM  
   * Choose `Debian GNU/Linux 10 (buster)` image (default)
+  * (Recommended) Increase persistent storage to 20 GB for multiple Docker images
   * Check `Allow HTTPS traffic`
 * Connect to your VM by SSH and execute,
   ```bash
@@ -13,7 +14,7 @@
       ./setup.sh         # create a notebook password
   docker-compose up      # debugging mode
   # docker-compose up -d # daemon mode
-  ```  
+  ```
 * Click your VM's `External IP` address button on GCP console or  
   Go to `https://[VM External IP address]` manually in your browser
 * Bypass security warning created by our self-signed encryption key
