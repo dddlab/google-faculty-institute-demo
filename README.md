@@ -13,7 +13,7 @@
   cd google-faculty-institute-demo && \
       ./setup.sh         # create a notebook password
   docker-compose up      # debugging mode
-  # docker-compose up -d # for daemon mode
+  # docker-compose up -d # daemon mode
   ```  
 * Click your VM's `External IP` address button on GCP console or  
   Go to `https://[VM External IP address]` manually in your browser
