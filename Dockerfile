@@ -1,4 +1,4 @@
-FROM jupyter/r-notebook:dc57157d6316
+FROM jupyter/datascience-notebook:dc57157d6316
 
 # start binder compatibility
 # from https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
