@@ -1,6 +1,4 @@
-# Reproducibility Demo
-
-## Jupyter Notebook on Google Compute Engine VM
+# Jupyter Notebook on Google Compute Engine VM
 
 * Create Compute Engine VM  
   * Choose Machine type according to your budget
