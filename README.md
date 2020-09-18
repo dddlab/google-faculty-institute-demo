@@ -14,7 +14,7 @@
 * Restart your session by logging out then back in
 * Execute,
   ```bash
-  cd google-faculty-institute-demo &&
+  cd google-faculty-institute-demo && \
       ./setup.sh
   ```
 
