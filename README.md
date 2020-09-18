@@ -12,9 +12,17 @@
   ```bash
   cd google-faculty-institute-demo && \
       ./setup.sh         # create a notebook password
-  docker-compose up      # debugging mode
-  # docker-compose up -d # daemon mode
+  ```
+* After creating your password, execute,
+  ```bash
+  docker-compose up           # debugging mode
+  # docker-compose up --build # rebuild Docker image
+  # docker-compose up -d      # daemon mode
   ```
 * Click your VM's `External IP` address button on GCP console or  
   Go to `https://[VM External IP address]` manually in your browser
 * Bypass security warning created by our self-signed encryption key
+* Now you can run 
+  * Jupyter notebook, `example-jupyter.ipynb`
+  * R Markdown, `example-rstudio.Rmd`
+
