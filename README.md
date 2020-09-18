@@ -1,7 +1,6 @@
 # Jupyter Notebook on Google Compute Engine VM
 
 * Create Compute Engine VM  
-  * Choose Machine type according to your budget
   * Choose `Debian GNU/Linux 10 (buster)` image (default)
   * Check `Allow HTTPS traffic`
 * Connect to your VM by SSH and execute,
