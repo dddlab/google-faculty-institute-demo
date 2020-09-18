@@ -15,4 +15,17 @@
   cd google-faculty-institute-demo && \
       ./setup.sh
   ```
-
+* Create password for Jupyter notebook
+* Execute,
+  ```bash
+  # cd ~/google-faculty-institute-demo
+  docker-compose up # debugging mode
+  ```
+  or 
+  ```bash
+  # cd ~/google-faculty-institute-demo
+  docker-compose up -d # daemon mode
+  ```
+* Click your VM's `External IP` address button on GCP console or  
+  Go to `https://[VM External IP address]` manually in your browser
+* Bypass security warning created by our self-signed encryption key
