@@ -1,5 +1,14 @@
 #!/bin/bash
 
+## install packages
+if ! [[ -x "$(command -v wget)" && -x "$(command -v git)"&& -x "$(command -v docker)"  && -x "$(command -v docker-compose)" ]]; then
+  sudo apt-get update && \
+      sudo apt-get install -y wget git docker.io docker-compose && \
+      sudo usermod -aG docker $USER
+  echo "Re-login and run setup.sh again"
+  exit 1
+fi
+
 [ -d .dddlab/keys ] || mkdir -p .dddlab/keys
 
 ## Self-signed certificates can be generated according to
