@@ -1,11 +1,13 @@
 #!/bin/bash
 
 ## install packages
-if ! [[ -x "$(command -v wget)" && -x "$(command -v git)"&& -x "$(command -v docker)"  && -x "$(command -v docker-compose)" ]]; then
+if ! [[ -x "$(command -v git)"&& -x "$(command -v docker)"  && -x "$(command -v docker-compose)" ]]; then
   sudo apt-get update && \
-      sudo apt-get install -y wget git docker.io docker-compose && \
-      sudo usermod -aG docker $USER
-  echo "Re-login and run setup.sh again"
+      sudo apt-get install -y git docker.io docker-compose && \
+      sudo usermod -aG docker $USER && \
+      git clone https://github.com/dddlab/google-faculty-institute-demo.git && \
+      echo "Cloned https://github.com/dddlab/google-faculty-institute-demo repository" && \
+      echo "Re-login and run ~/google-faculty-institute-demo/setup.sh"
   exit 1
 fi
 
@@ -24,9 +26,8 @@ openssl req -x509 -nodes \
 
 
 ## utility for hashing notebook password 
-
-wget -nc https://github.com/dddlab/jupyter-passwd/releases/download/v0.0.1.6/hash-password \
-    -O .dddlab/hash-password && \
+curl -fsSL https://github.com/dddlab/jupyter-passwd/releases/download/v0.0.1.6/hash-password \
+    --output .dddlab/hash-password && \
     chmod u+x .dddlab/hash-password
 
 # https://github.com/docker/compose/issues/4223#issuecomment-280077263
