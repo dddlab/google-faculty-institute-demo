@@ -1,4 +1,4 @@
-# Jupyter Notebook on Google Compute Engine VM
+# Jupyter Notebook and RStudio on Google Compute Engine VM
 
 * Create Compute Engine VM  
   * Choose `Debian GNU/Linux 10 (buster)` image (default)
